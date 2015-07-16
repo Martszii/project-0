@@ -1,0 +1,200 @@
+/* NOTE: scroll */
+
+.nav_up{
+	padding:7px;
+	background-color:white;
+	position:fixed;
+	background:transparent url(../img/arrow_up.png) no-repeat top left;
+	background-position:50% 50%;
+	width:20px;
+	height:20px;
+	bottom:10px;
+	opacity:0.7;
+	right:70px;
+	white-space:nowrap;
+	cursor: pointer;
+	-moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+	-khtml-border-top-right-radius:3px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.nav_down{
+	padding:7px;
+	background-color:white;
+	position:fixed;
+	background:transparent url(../img/arrow_down.png) no-repeat top left;
+	background-position:50% 50%;
+	width:20px;
+	height:20px;
+	bottom:10px;
+	opacity:0.7;
+	right:30px;
+	white-space:nowrap;
+	cursor: pointer;
+	-moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+	-khtml-border-top-right-radius:3px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+
+
+
+
+
+
+
+
+.pistol {
+   width: 250px;
+   height: 250px;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+
+	}
+
+.flip-container, .front, .back {
+	width: 250px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  text-align: center;
+  padding-top: 50px;
+  text-transform: uppercase;
+
+
+}
+.text {
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.flip-container {
+  display: inline-block;
+  border: 1px solid black;
+}
+.gcontainer {
+  padding-left: 100px;
+}
+center {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.page p {
+  text-align: center;
+}
+#showmore {
+  display: none;
+}
+#show {
+	padding: 5px;
+	max-width: 100px;
+	border: 1px solid #595959;
+	cursor: pointer;
+}
+#showmore2 {
+  display: none;
+}
+#show2 {
+	padding: 5px;
+	max-width: 100px;
+	border: 1px solid #595959;
+	cursor: pointer;
+}
+#showmore3 {
+  display: none;
+}
+#show3 {
+	padding: 5px;
+	max-width: 100px;
+	border: 1px solid #595959;
+	cursor: pointer;
+}
+
+
+.la {
+	width: 980px;
+	margin-bottom: 10px;
+	height: auto;
+}
+
+.lahead {
+	padding-top: 75px;
+	font-size: 25px;
+	border-bottom: 1px solid #00a2d1;
+	margin-left: 18px;
+
+}
+
+.labody {
+}
+
+.lapost {
+	clear: both;
+	width: 980px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.lapost:hover {
+	color: #00a2d1;
+}
+
+.laposthead {
+	font-weight: bold;
+	padding: 10px;
+}
+
+.lapostbody {
+	padding-left: 30px;
+	/* NOTE: display: none; */
+}
+.map {
+  float: right;
+  margin: 13px;
+  padding-top: 30px;
+  display: inline-block;
+}
+footer {
+  clear: both;
+}
+.contact {
+  margin-top: 125px;
+
+}
